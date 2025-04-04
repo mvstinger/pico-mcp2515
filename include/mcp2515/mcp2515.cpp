@@ -50,7 +50,7 @@ MCP2515::ERROR MCP2515::reset(void)
     endSPI();
 
     //Depends on oscillator & capacitors used
-    sleep_ms(10);
+    sleep_ms(100);
 
     uint8_t zeros[14];
     memset(zeros, 0, sizeof(zeros));
